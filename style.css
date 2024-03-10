@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oleo+Script:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
+
+body {
+  font-family: "Oleo Script", system-ui;
+  font-family: "Dancing Script", cursive;
+  font-family: "Poppins",  sans-serif;
+}
+/* --------------------------------------------------------------------- */
+
+.navbar {
+  background-color: rgb(136, 115, 88);
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar .logo {
+  position: relative;
+}
+
+.navbar .logo img {
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  top: 10px;
+}
+
+.navbar .logo span {
+  font-family: "Oleo Script", system-ui;
+  color: rgb(224, 203, 171);
+  text-shadow: 1px 1px 5px black;
+  position: absolute;
+  left: 5px;
+  top: 53px;
+}
+
+.navbar .menu ul {
+  font-size: 25px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.navbar .menu a {
+  font-family: "Dancing Script", cursive;
+  color: rgb(224, 203, 168);
+  text-shadow: 1px 1px 5px black;
+}
+
+.navbar .logo2 {
+  background-color: white;
+  box-shadow: 1px 1px 15px black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.navbar .logo2 img {
+  width: 200%;
+  height: 200%;
+  margin-top: 49px;
+  margin-left: -18px;
+}
+
+.navbar .logo2 i {
+  font-size: 24px;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+}
+/* ----------------------------------------------------------------------- */
+
+.first {
+  background-image: url(media/first.avif);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.first h1,
+.first p {
+  color: rgb(224, 204, 171);
+  font-family: "Oleo Script", system-ui;
+  text-align: center;
+  text-shadow: 1px 1px 45px black;
+}
+
+.first h1 {
+  font-size: 65px;
+  padding-top: 185px;
+}
+/* ---------------------------------------------------------------------------- */
+
+.second h2 {
+  color: rgb(55, 55, 53);
+  text-align: center;
+  font-size: 50px;
+  font-family: "Oleo Script", system-ui;
+  text-shadow: 1px 1px 25px grey;
+}
+
+.second p {
+  color: rgb(55, 55, 53);
+  font-family: "Oleo Script", system-ui;
+  text-align: center;
+}
+
+.second .products {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.second .products .product {
+  width: 18%;
+  background-color: white;
+  border: 5px solid rgb(224, 204, 171);
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  cursor: pointer;
+}
+
+.second .products .product i {
+  color: rgb(55, 55, 53);
+  font-size: 15px;
+  padding: 8px;
+  background-color: rgb(224, 204, 171);
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* .second .products .product i :hover {
+  color: brown;
+  box-shadow: 1px 1px 25px brown;
+} */
+
+.second .products .product img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.second .products .product #cross {
+  text-align: center;
+}
+
+.second .products .product #price {
+  font-weight: 600;
+}
+
+.second .products .product .buy {
+  display: flex;
+  justify-content: space-around;
+}
+
+.second .products .product button {
+  color: rgb(224, 204, 171);
+  background-color: rgb(56, 55, 53);
+  padding: 8px 18px;
+  border-radius: 12px;
+}
+
+.second .products .product button:hover {
+  color: rgb(56, 55, 53);
+  background-color: rgb(224, 204, 171);
+}
+/* ---------------------------------------------------------------------------- */
+.third {
+  background-image: url(media/picture2.avif);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.third h1 {
+  color: rgb(224, 204, 171);
+  font-family: "Oleo Script", system-ui;
+  text-align: center;
+  font-size: 45px;
+  padding-top: 150px;
+  text-shadow: 1px 1px 15px black;
+}
+
+.third .cut {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  padding-top: 38px;
+}
+
+.third .cut .hr {
+  width: 100%;
+  height: 10px;
+  background-color: rgb(246, 244, 244);
+}
+
+.third p {
+  color: rgb(224, 204, 171);
+  font-family: "Oleo Script", system-ui;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+  text-shadow: 1px 1px 15px black;
+}
+
+/* ----------------------------------------------------------------------------------- */
+.fourth {
+  position: relative;
+}
+
+.fourth .about {
+  position: absolute;
+  top: 120px;
+  left: 100px;
+  right: 700px;
+}
+
+.fourth .about h2 {
+  color: rgb(55, 55, 53);
+  font-size: 40px;
+  font-family: "Oleo Script", system-ui;
+  text-shadow: 1px 1px 15px rgb(224, 204, 171);
+  padding-left: 70px;
+}
+
+.fourth .about p {
+  color: rgb(55, 55, 53);
+  font-family: "Oleo Script", system-ui;
+  font-size: 13px;
+  padding-top: 20px;
+  padding-right: 70px;
+  padding-left: 70px;
+}
+
+.fourth .about_photo img {
+  width: 530px;
+  height: 80vh;
+  position: absolute;
+  top: 80px;
+  right: 150px;
+  padding-bottom: 60px;
+}
+
+.fourth .about_photo #left {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  right: 50%;
+  top: 270px;
+  cursor: pointer;
+}
+
+.fourth .about_photo #right {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  right: 15%;
+  top: 270px;
+  cursor: pointer;
+}
+
+.fourth .about #about_light1 {
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: -1;
+}
+
+.fourth .about #about_light2 {
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  top: 39px;
+  left: 141px;
+}
