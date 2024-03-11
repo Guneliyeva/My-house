@@ -160,10 +160,10 @@ body {
   right: 10px;
 }
 
-/* .second .products .product i :hover {
+.second .products .product .fav :hover {
   color: brown;
   box-shadow: 1px 1px 25px brown;
-} */
+}
 
 .second .products .product img {
   width: 100%;
@@ -181,7 +181,9 @@ body {
 
 .second .products .product .buy {
   display: flex;
-  justify-content: space-around;
+  flex-flow: row flex-end;
+  /* justify-content: space-between; */
+  gap: 40px;
 }
 
 .second .products .product button {
